@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="라스베가스"
+        android:textSize="40dp"/>
+
+    <ImageView
+        android:id="@+id/las"
+        android:layout_width="400dp"
+        android:layout_height="300dp"
+        android:padding="20dp"
+        android:layout_gravity="center"
+        android:src="@drawable/las">
+    </ImageView>
+
+    <SlidingDrawer
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:content="@+id/content"
+        android:handle="@+id/handle"
+        android:orientation="vertical">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/handle"
+            android:text="설명">
+        </Button>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/content"
+            android:background="@color/purple_200"
+            android:gravity="center"
+            android:orientation="vertical">
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="라스베이거스 또는 라스베가스는 미국 남서부 사우스웨스트 네바다주 남부 사막 가운데에 있는 도시이자 최대도시이다. \n클라크군에 위치해 있다.\n세계적으로 잘 알려진 카지노가 많은 관광과 도박의 도시이며, 결혼과 이혼 수속이 간단한 곳으로도 잘 알려져 있다. \n면적:352km²\n인구: 64.46만 (2018년)">
+                </TextView>
+
+            </ScrollView>
+
+        </LinearLayout>
+
+    </SlidingDrawer>
+
+</LinearLayout>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="@color/purple_200"
+        android:text="태종대"
+        android:textSize="40dp"/>
+
+    <ImageView
+        android:id="@+id/taeJong"
+        android:layout_width="400dp"
+        android:layout_height="300dp"
+        android:padding="20dp"
+        android:layout_gravity="center"
+        android:src="@drawable/taejong">
+    </ImageView>
+
+    <SlidingDrawer
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:content="@+id/content"
+        android:handle="@+id/handle"
+        android:orientation="vertical">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/handle"
+            android:text="설명">
+        </Button>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/content"
+            android:background="@color/purple_200"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="부산광역시 영도구 동삼동에 있는 명승지(국가 지정 명승지 제17호)이다.\n
+이름의 유래는 신라 태종 무열왕이 들러서 활쏘기를 하고 연회를 개최했던 것이다.\n
+울창한 숲과 기암괴석이 남해 바다와 어우러진 비경으로 유명한 곳.\n
+먼 곳에서 온 타 지방 사람들, 외국인이 부산으로 관광올 때 반드시 들르는 곳 중 하나다.\n
+대도시 안의 해안가라는 생각이 들지 않을만큼 높은 바위절벽과 바다가 어우러진 아름다운 풍경으로 유명하며 특히 약간 완만한 등산로에 있는 소나무가 우거진 풍경 너머로 시원한 바다 전경을 볼 수 있다. 그 외에 특이한 곳은 무한도전에서 노홍철과 정형돈이 내기를 하며 뛰어내린 계단이라거나... 계단 너머로 등대까지 이어진 태종대 일주도로는 바다를 자주 가 보지 않은 사람들이 연인과의 데이트 코스로 삼기에 딱 좋다고 한다. 다만 길이 평평하게 포장된 길은 아닌만큼 신발은 편한 운동화를 신는 것이 좋다.\n
+맑고 미세먼지가 적은 날엔 일본 대마도가 보이기도 하며, 굳이 대마도가 아니더라도 전망대에서 바라보는 탁 트인 바다 전경은 일품이다.
+절경 중 하나는 기암괴석, 절벽등이니 굳이 유람선을 안타더라도 해안가로 내려가 보는 것을 추천한다.">
+
+                </TextView>
+
+            </ScrollView>
+
+        </LinearLayout>
+
+
+    </SlidingDrawer>
+
+</LinearLayout>
